@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="node_modules/howler/dist/howler.js"></script>
-    <script>
-        var sound = new Howl({
-        src: ['sound.webm', 'sound.mp3']
-        });
-    </script>
+
     <title>Document</title>
 </head>
 <body>
+
+    <h2>This is a site that will play music</h2>
    
     <!-- https://github.com/goldfire/howler.js -->
+    <script>
+        var sound = new Howl({
+        src: ['Sounds/grossDub.mp3']
+        });
+      
+      sound.play();
+    </script>
 
 
+    <!-- https://github.com/axios/axios -->
     <script src="main.js"></script>
     <script src="node_modules/howler/dist/howler.min.js"></script>
 </body>
