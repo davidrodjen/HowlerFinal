@@ -4,6 +4,12 @@ window.onload = function () {
 
     var dubBtn = document.getElementById("BadDub");
     dubBtn.onclick = dubPlay;
+
+    var paradisepauseBtn = document.getElementById("paradisepause");
+    paradisepauseBtn.onclick = ParadisePause;
+
+    var dubpauseBtn = document.getElementById("dubpause");
+    dubpauseBtn.onclick = dubPause;
 }
 
 
@@ -17,6 +23,16 @@ var Paradisesound = new Howl({
     }
     });
 
+
+function ParadisePlay(){
+    Paradisesound.play();
+}
+
+function ParadisePause(){
+    Paradisesound.pause();
+}
+
+
 var Dubsound = new Howl({
     src: ['Sounds/grossDub.mp3'],
     autoplay: false,
@@ -27,12 +43,12 @@ var Dubsound = new Howl({
     }
 });
     
-function ParadisePlay(){
-    Paradisesound.play();
-}
-
 function dubPlay(){
     Dubsound.play();
+}
+
+function dubPause(){
+    Dubsound.pause();
 }
 // sound.play();
 
