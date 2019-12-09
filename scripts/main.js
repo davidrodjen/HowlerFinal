@@ -23,6 +23,13 @@ window.onload = function () {
 
     var campPauseBtn = document.getElementById("campPause");
     campPauseBtn.onclick = campPause;
+
+
+    var spacePlayBtn = document.getElementById("spaceDancerPlay");
+    spacePlayBtn.onclick = spacePlay;
+
+    var spacePauseBtn = document.getElementById("spaceDancerPause");
+    spacePauseBtn.onclick = spacePause;
 }
 // create a windows onload event that triggers pause and play
 
@@ -30,7 +37,7 @@ var Paradisesound = new Howl({
     src: ['Sounds/ParadiseLights.mp3'],
     autoplay: false,
     loop: false,
-    volume: 0.3,
+    volume: 0.7,
     onend: function (){
         console.log('Finished');
     }
@@ -50,7 +57,7 @@ var Dubsound = new Howl({
     src: ['Sounds/grossDub.mp3'],
     autoplay: false,
     loop: false,
-    volume: 0.3,
+    volume: 0.7,
     oneend: function() {
         console.log('Finished');
     }
@@ -71,7 +78,7 @@ var majChase = new Howl({
     src: ['Sounds/ExtendedMajesticChase.mp3'],
     autoplay: false,
     loop: false,
-    volume: 0.4,
+    volume: 0.7,
     oneend: function() {
         console.log('Finished');
     }
@@ -92,7 +99,7 @@ var campLove = new Howl({
     src: ['Sounds/CampfireLove.mp3'],
     autoplay: false,
     loop: false,
-    volume: 0.4,
+    volume: 0.7,
     oneend: function() {
         console.log('Finished');
     }
@@ -106,6 +113,28 @@ function campPlay(){
 
 function campPause(){
     campLove.pause();
+}
+
+
+
+var spaceDance = new Howl({
+    src: ['Sounds/SpaceDancer.mp3'],
+    autoplay: false,
+    loop: false,
+    volume: 0.8,
+    oneend: function() {
+        console.log('Finished');
+    }
+});
+ /**
+  * Create functions to call by buttons using play and pause as returns
+  */   
+function spacePlay(){
+    spaceDance.play();
+}
+
+function spacePause(){
+    spaceDance.pause();
 }
 // sound.play();
 
