@@ -1,4 +1,37 @@
 body{
     background-image: linear-gradient(90deg, #43C6AC, #F8FFAE);
+    padding-left: 25%;
 
 }
+
+h2{
+    font-size: 3em;
+    align-content: center;
+}
+
+[class |=play]{
+    background-color: rgb(91, 148, 223);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #43C6AC;
+
+    
+}
+
+.btn-group button{
+    display:inline-block;
+    
+}
+
+
+
+
+/* ul#play li.pause{
+    float:left;
+} */
+
+/* [class |=pause]{
+    float: left;
+} */
