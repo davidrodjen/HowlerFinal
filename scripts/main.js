@@ -12,7 +12,7 @@ window.onload = function () {
     var dubpauseBtn = document.getElementById("dubpause");
     dubpauseBtn.onclick = dubPause;
 }
-
+// create a windows onload event that triggers pause and play
 
 var Paradisesound = new Howl({
     src: ['Sounds/ParadiseLights.mp3'],
@@ -24,7 +24,7 @@ var Paradisesound = new Howl({
     }
     });
 
-
+//function for playing song created as a var object
 function ParadisePlay(){
     Paradisesound.play();
 }
@@ -33,7 +33,7 @@ function ParadisePause(){
     Paradisesound.pause();
 }
 
-
+//function for playing song created as a var object
 var Dubsound = new Howl({
     src: ['Sounds/grossDub.mp3'],
     autoplay: false,
@@ -43,7 +43,9 @@ var Dubsound = new Howl({
         console.log('Finished');
     }
 });
-    
+ /**
+  * Create functions to call by buttons using play and pause as returns
+  */   
 function dubPlay(){
     Dubsound.play();
 }
