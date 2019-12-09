@@ -11,6 +11,12 @@ window.onload = function () {
 
     var dubpauseBtn = document.getElementById("dubpause");
     dubpauseBtn.onclick = dubPause;
+
+    var majChaseBtn = document.getElementById("majchase");
+    majChaseBtn.onclick = majPlay;
+
+    var majChasePauseBtn = document.getElementById("majchasepause");
+    majChasePauseBtn.onclick = majPause;
 }
 // create a windows onload event that triggers pause and play
 
@@ -52,6 +58,27 @@ function dubPlay(){
 
 function dubPause(){
     Dubsound.pause();
+}
+
+
+var majChase = new Howl({
+    src: ['Sounds/ExtendedMajesticChase.mp3'],
+    autoplay: false,
+    loop: false,
+    volume: 0.4,
+    oneend: function() {
+        console.log('Finished');
+    }
+});
+ /**
+  * Create functions to call by buttons using play and pause as returns
+  */   
+function majPlay(){
+    majChase.play();
+}
+
+function majPause(){
+    majChase.pause();
 }
 // sound.play();
 
