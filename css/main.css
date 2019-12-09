@@ -18,8 +18,7 @@ h2{
     
 }
 
-[class |=play]{
-    background-color: rgb(91, 148, 223);
+[class |=btn]{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
