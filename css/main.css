@@ -1,8 +1,6 @@
 body{
     background-image: linear-gradient(90deg, #0F2027, #203A43, #2C5364 );
     
-    
-
 }
 
 h2{
@@ -27,21 +25,10 @@ h2{
     margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 25%;
-    
+
 }
 
 .btn-group button{
     display:inline-block;
     
 }
-
-
-
-
-/* ul#play li.pause{
-    float:left;
-} */
-
-/* [class |=pause]{
-    float: left;
-} */
