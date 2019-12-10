@@ -3,28 +3,43 @@ body{
     
 }
 
-h2{
-    color:  silver;
+h1{
+    color:  white;
     font-size: 3em;
     font-style: italic;
     align-content: center;
-    border: 16px ridge #ABCDE0;
-    border-radius: 40px;
+    /* border: 16px ridge #ABCDE0;
+    border-radius: 40px; */
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    /* border-radius: 200px 0px 200px 0px;
+    -moz-border-radius: 200px 0px 200px 0px;
+    -webkit-border-radius: 200px 0px 200px 0px;
+    border: 38px groove #ccc2cc; */
+    background-image: linear-gradient(90deg, #0F2027, #203A43, #2C5364 );
+    border-bottom:15px solid white;
+    
+    
+    
+}
+
+h3{
+    color: white;
+    margin-left: 21%;
+    padding-top: .5em;
     
 }
 
 [class |=btn]{
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     border-color: #43C6AC;
     margin-bottom: 15px;
     margin-right: 10px;
-    margin-left: 25%;
+    margin-left: 22%;
 
 }
 
