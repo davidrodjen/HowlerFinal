@@ -5,7 +5,7 @@ body{
 
 h1{
     color:  white;
-    font-size: 3em;
+    font-size: 4em;
     font-style: italic;
     align-content: center;
     /* border: 16px ridge #ABCDE0;
@@ -17,11 +17,22 @@ h1{
     -moz-border-radius: 200px 0px 200px 0px;
     -webkit-border-radius: 200px 0px 200px 0px;
     border: 38px groove #ccc2cc; */
-    background-image: linear-gradient(90deg, #0F2027, #203A43, #2C5364 );
-    border-bottom:15px solid white;
+    background-image: linear-gradient(0deg, #0F2027, #203A43, #2C5364 );
+    /* border-bottom:15px solid white; */
     
     
     
+}
+
+p{
+    color: white;
+    float: right;
+    border-top: white;
+    border-bottom: white;
+    padding-top: 1em;
+    padding-right: 10%;
+    width: 40%;
+    font-size: 1.5em;
 }
 
 h3{
@@ -40,6 +51,7 @@ h3{
     margin-bottom: 15px;
     margin-right: 10px;
     margin-left: 22%;
+    font-size: large;
 
 }
 
